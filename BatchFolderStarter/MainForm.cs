@@ -19,7 +19,6 @@ namespace BatchFolderStarter
         public MainForm()
         {
             InitializeComponent();
-            Hide();
         }
 
         private void toolStripMenuItemClose_Click(object sender, EventArgs e)
@@ -39,7 +38,7 @@ namespace BatchFolderStarter
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            Hide();
             CreateContextMenu();
 
         }
@@ -144,5 +143,6 @@ namespace BatchFolderStarter
                 return cp;
             }
         }
+
     }
 }
